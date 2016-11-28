@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/Menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FF1960DA"
+        >
+
+            <TextView
+                android:id="@+id/Menu_top_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="菜单1"
+                android:textColor="#222222" />
+
+            <TextView
+                android:id="@+id/Menu_top_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="菜单2"
+                android:textColor="#222222" />
+
+    </LinearLayout>
+    <!--
+    <android.support.v7.widget.RecyclerView
+    -->
+
+   <!-- <com.example.ede67167.RecyclerView.MyRecyclerView-->
+    <common.MyPullToRefresh.PullToRefreshRecyclerView
+        android:id="@+id/product_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f5f4dc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:textStyle="bold"
+                android:allowUndo="true"
+                android:textSize="30sp"
+                android:textColor="#1423e9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_userID"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                    <TextView
+                                android:id="@+id/userId"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="用户ID:"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+                        <EditText
+                                android:id="@+id/id_entry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:drawable/edit_text"
+                                android:singleLine="true"
+
+                                />
+                    </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_password"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/line_userID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="密码:"/>
+                <EditText
+                    android:id="@+id/password_entry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/edit_text"
+                    android:layout_weight="2"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:password="true"
+                    android:inputType="textPassword" />
+           </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_below="@+id/line_password"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="1"
+            android:text="登 录"
+            android:background="#1792d0" />
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+
+            android:text="注册"
+            android:textColor="#0703fe"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
